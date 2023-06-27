@@ -2,7 +2,7 @@
 
 function reverseWords(sentence) {
     // Split the sentence into an array of words
-    const words = sentence.split(' ');
+    let words = sentence.split(' ');
 
     // Iterate over each word and reverse the characters
     for (let i = 0; i < words.length; i++) {
@@ -10,7 +10,7 @@ function reverseWords(sentence) {
     }
 
     // Join the reversed words back into a sentence
-    const reversedSentence = words.join(' ');
+    let reversedSentence = words.join(' ');
     return reversedSentence;
 }
 
@@ -20,6 +20,6 @@ function reverseString(str) {
 }
 
 // Example usage
-const sentence = 'Implement a JavaScript function to reverse the order of characters in each word';
-const reversedSentence = reverseWords(sentence);
+let sentence = 'Implement a JavaScript function to reverse the order of characters in each word';
+let reversedSentence = reverseWords(sentence);
 console.log(reversedSentence);

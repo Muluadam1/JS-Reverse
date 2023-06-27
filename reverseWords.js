@@ -1,18 +1,20 @@
 /* Implement a JavaScript program to reverse the order of words in a given sentence. */
 
 function reverseWordsOrder(sentence) {
-    // Split the sentence into an array of words
-    const words = sentence.split(' ');
+    let words = sentence.split(' ');
+    let reversedWords = [];
 
-    // Reverse the order of the words
-    const reversedWords = words.reverse();
+    for (let i = words.length - 1; i >= 0; i--) {
+        reversedWords.push(words[i]);
+    }
 
-    // Join the reversed words back into a sentence
-    const reversedSentence = reversedWords.join(' ');
+    let reversedSentence = reversedWords.join(' ');
     return reversedSentence;
 }
 
-// Example usage
-const sentence = 'Coding JS is fun!';
-const reversedSentence = reverseWordsOrder(sentence);
-console.log(reversedSentence);
+function main() {
+    let sentence = 'Coding JS is fun!';
+    let reversedSentence = reverseWordsOrder(sentence);
+    console.log(reversedSentence);
+}
+main();

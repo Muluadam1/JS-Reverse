@@ -14,7 +14,9 @@ function reverseCase(str) {
     return reversedStr;
 }
 
-// Example usage
-const inputString = 'I am one of the best fullstack develeopers in USA!';
-const reversedString = reverseCase(inputString);
+function main(){
+let inputString = 'I am one of the best fullstack develeopers in USA!';
+let reversedString = reverseCase(inputString);
 console.log(reversedString);
+}
+main();

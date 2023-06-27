@@ -9,8 +9,8 @@ function reverseString(str) {
 }
 
 function main() {
-    const inputString = 'Hello, JavaScript!';
-    const reversedString = reverseString(inputString);
+    let inputString = 'Hello, JavaScript!';
+    let reversedString = reverseString(inputString);
     console.log(reversedString);
 }
 main();

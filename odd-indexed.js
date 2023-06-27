@@ -24,8 +24,8 @@ function reverseString(str) {
 }
 
 function main() {
-    const sentence = 'Pellentesque consectetur neque nec arcu tempor, at rutrum neque fermentum.';
-    const reversedSentence = reverseOddIndexedWords(sentence);
+    let sentence = 'Pellentesque consectetur neque nec arcu tempor, at rutrum neque fermentum.';
+    let reversedSentence = reverseOddIndexedWords(sentence);
     console.log(reversedSentence);
 }
 main();
